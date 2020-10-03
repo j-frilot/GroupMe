@@ -1,0 +1,140 @@
+@import "variables";
+@import "utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $blue-color;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 45px 325px auto;
+  height: 100vh;
+}
+
+//   NAV MENU LEFT------
+.nav-menu {
+  background: $light-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  ul {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+      margin-bottom: 3rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+// GROUP LIST-----------
+
+.group-list {
+  display: flex;
+  flex-direction: column;
+  background-color: $light-color;
+
+  .list-title {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $medium-color;
+    padding: 0.5rem 0.5rem;
+
+    h2 {
+      padding: 0.5rem 0 0 0.5rem;
+    }
+
+    ul li {
+      display: inline;
+    }
+  }
+
+  .search-wrapper {
+    border: 1px solid $medium-color;
+    padding: 1rem;
+
+    .search-box {
+      text-align: center;
+      width: 90%;
+    }
+  }
+
+  .group {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $medium-color;
+    padding: 0.5rem;
+
+    .material-icons {
+      font-size: 60px;
+    }
+  }
+}
+
+// CHAT BOX
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  background-color: $light-color;
+
+  .chat-title {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .collection {
+    overflow: scroll;
+    height: 80vh;
+
+    .collection-item {
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        background-color: $blue-color;
+        color: $dark-color;
+
+        .material-icons {
+          color: $dark-color;
+        }
+      }
+
+      .title {
+        font-weight: bold;
+      }
+    }
+
+    .timestamp {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .message-box {
+    width: 100%;
+    height: 10vh;
+  }
+}

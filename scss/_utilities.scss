@@ -1,0 +1,31 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.lead {
+  font-size: 15px;
+  font-weight: lighter;
+  color: black;
+}
+
+.material-icons {
+  font-size: 30px;
+  color: $blue-color;
+}
+
+.heart-icon {
+  font-size: 20px;
+}
+
+h1,
+h2 {
+  font-weight: lighter;
+}
