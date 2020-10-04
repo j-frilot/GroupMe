@@ -1,5 +1,7 @@
-@import "variables";
-@import "utilities";
+$blue-color: #064cce;
+$light-color: #f7f7f7;
+$medium-color: #c1c1c1;
+$dark-color: #4c528d;
 
 * {
   margin: 0;
@@ -13,6 +15,38 @@ body {
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
   color: $blue-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.lead {
+  font-size: 15px;
+  font-weight: lighter;
+  color: black;
+}
+
+.material-icons {
+  font-size: 30px;
+  color: $blue-color;
+}
+
+.heart-icon {
+  font-size: 20px;
+}
+
+h1,
+h2 {
+  font-weight: lighter;
 }
 
 .page-grid {
@@ -104,21 +138,25 @@ body {
 
   .collection {
     overflow: scroll;
-    height: 80vh;
+    height: 75vh;
 
-    .collection-item {
+    li {
       margin: auto;
       display: flex;
       justify-content: space-between;
-
+      border-bottom: $dark-color 1px dashed;
       padding: 0.5rem 1rem;
 
       &:hover {
-        background-color: $blue-color;
+        background-color: $medium-color;
         color: $dark-color;
 
         .material-icons {
           color: $dark-color;
+
+          &:hover {
+            background-color: #ff0000;
+          }
         }
       }
 
@@ -134,7 +172,16 @@ body {
   }
 
   .message-box {
-    width: 100%;
-    height: 10vh;
+    width: 40%;
+    height: 5vh;
+    border: $dark-color 2px dashed;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: $medium-color;
+    border: $dark-color 2px dashed;
   }
 }
