@@ -48,10 +48,11 @@ h2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 45px 325px auto;
-      grid-template-columns: 45px 325px auto;
+  grid-template-columns: 45px 325px auto;
   height: 100vh;
 }
 
+/* ====================================================== */
 .nav-menu {
   background: #f7f7f7;
   display: -webkit-box;
@@ -59,11 +60,11 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .nav-menu ul {
@@ -73,8 +74,8 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .nav-menu ul .logo {
@@ -86,14 +87,15 @@ h2 {
   padding-left: 0.5rem;
 }
 
+/* ===================================================== */
 .group-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #f7f7f7;
 }
 
@@ -102,10 +104,10 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border: 1px solid #c1c1c1;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem;
 }
 
 .group-list .list-title h2 {
@@ -121,46 +123,48 @@ h2 {
   padding: 1rem;
 }
 
-.group-list .search-wrapper .search-box {
-  text-align: center;
-  width: 90%;
-}
-
 .group-list .group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border: 1px solid #c1c1c1;
   padding: 0.5rem;
+}
+
+.group-list .group:hover {
+  cursor: pointer;
+  background-color: #c1c1c1;
 }
 
 .group-list .group .material-icons {
   font-size: 60px;
 }
 
+/* =================================================== */
 .chat-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #f7f7f7;
 }
 
 .chat-box .chat-title {
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: 1px solid #c1c1c1;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .chat-box .collection {
@@ -174,8 +178,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-bottom: #4c528d 1px dashed;
   padding: 0.5rem 1rem;
 }
@@ -216,3 +220,15 @@ h2 {
   border: #4c528d 2px dashed;
 }
 /*# sourceMappingURL=main.css.map */
+
+@media screen and (max-width: 768px) {
+  .page-grid {
+    grid-template-columns: 45px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .group-list {
+    display: none;
+  }
+}
