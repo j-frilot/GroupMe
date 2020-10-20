@@ -1,3 +1,10 @@
+:root {
+  --main-txt: #064cce;
+  --lead-txt: #000;
+  --main-bg: #f7f7f7;
+  --border: 1px solid #c1c1c1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +16,8 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
-  color: #064cce;
+  color: var(--main-txt);
+  background: var(--main-bg);
 }
 
 a {
@@ -27,12 +35,12 @@ img {
 .lead {
   font-size: 15px;
   font-weight: lighter;
-  color: black;
+  color: var(--lead-txt);
 }
 
 .material-icons {
   font-size: 30px;
-  color: #064cce;
+  color: var(--main-txt);
 }
 
 .heart-icon {
@@ -54,7 +62,6 @@ h2 {
 
 /* ====================================================== */
 .nav-menu {
-  background: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +103,6 @@ h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #f7f7f7;
 }
 
 .group-list .list-title {
@@ -106,7 +112,7 @@ h2 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border: 1px solid #c1c1c1;
+  border: var(--border);
   padding: 0.5rem;
 }
 
@@ -119,7 +125,7 @@ h2 {
 }
 
 .group-list .search-wrapper {
-  border: 1px solid #c1c1c1;
+  border: var(--border);
   padding: 1rem;
 }
 
@@ -130,7 +136,7 @@ h2 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border: 1px solid #c1c1c1;
+  border: var(--border);
   padding: 0.5rem;
 }
 
@@ -162,7 +168,7 @@ h2 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border: 1px solid #c1c1c1;
+  border: var(--border);
   padding: 0.5rem;
   text-align: center;
 }
@@ -180,16 +186,12 @@ h2 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border-bottom: #4c528d 1px dashed;
+  border-bottom: var(--border);
   padding: 0.5rem 1rem;
 }
 
 .chat-box .collection li:hover {
   background-color: #c1c1c1;
-  color: #4c528d;
-}
-
-.chat-box .collection li:hover .material-icons {
   color: #4c528d;
 }
 
@@ -202,26 +204,33 @@ h2 {
 }
 
 .chat-box .collection .timestamp {
-  text-align: center;
   text-transform: uppercase;
 }
 
 .chat-box .message-box {
   width: 40%;
   height: 5vh;
-  border: #4c528d 2px dashed;
+  border: var(--border);
 }
 
 .chat-box .btn {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   border: none;
-  background-color: #c1c1c1;
-  border: #4c528d 2px dashed;
+  background-color: var(--main-bg);
+  border: var(--border);
+  outline: none;
 }
+
+.chat-box .btn:hover {
+  cursor: pointer;
+}
+
+.chat-box.btn:
 /*# sourceMappingURL=main.css.map */
 
-@media screen and (max-width: 768px) {
+/* media query */ @media
+  screen and (max-width: 768px) {
   .page-grid {
     grid-template-columns: 45px auto;
   }
